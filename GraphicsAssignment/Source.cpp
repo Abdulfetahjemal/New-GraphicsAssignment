@@ -22,8 +22,207 @@ float tra_z = 0.0f;
 
 float grow_shrink = 70.0f;
 float resize_f = 1.0f;
+void tile_1() {
+
+	//left rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.9f, 1.0f, -1.0f);
+	glVertex3f(0.1f, 1.0f, -1.0f);
+	glVertex3f(0.1f, 1.0f, -0.9f);
+	glVertex3f(0.9f, 1.0f, -0.9f);
+	glEnd();
+
+	//bottom rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.1f, 1.0f, -0.9f);
+	glVertex3f(0.0f, 1.0f, -0.9f);
+	glVertex3f(0.0f, 1.0f, -0.1f);
+	glVertex3f(0.1f, 1.0f, -0.1f);
+	glEnd();
+
+	//right rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.1f, 1.0f, -0.1f);
+	glVertex3f(0.1f, 1.0f, -0.0f);
+	glVertex3f(0.9f, 1.0f, -0.0f);
+	glVertex3f(0.9f, 1.0f, -0.1f);
+	glEnd();
+
+	//top rectangle
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(1.0f, 1.0f, -0.9f);
+	glVertex3f(0.9f, 1.0f, -0.9f);
+	glVertex3f(0.9f, 1.0f, -0.1f);
+	glVertex3f(1.0f, 1.0f, -0.1f);
+	glEnd();
 
 
+	///interior triangles
+
+
+	///==>left top
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.8f, 1.0f, -0.9f);
+	glVertex3f(0.8f, 1.0f, -0.8f);
+	glVertex3f(0.9f, 1.0f, -0.8f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.8f, 1.0f, -0.8f);
+	glVertex3f(0.8f, 1.0f, -0.6f);
+	glVertex3f(0.9f, 1.0f, -0.7f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.7f, 1.0f, -0.9f);
+	glVertex3f(0.6f, 1.0f, -0.8f);
+	glVertex3f(0.8f, 1.0f, -0.8f);
+	glEnd();
+
+
+	////===> left bottom
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.2f, 1.0f, -0.9f);
+	glVertex3f(0.1f, 1.0f, -0.8f);
+	glVertex3f(0.2f, 1.0f, -0.8f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.2f, 1.0f, -0.8f);
+	glVertex3f(0.1f, 1.0f, -0.7f);
+	glVertex3f(0.2f, 1.0f, -0.6f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.3f, 1.0f, -0.9f);
+	glVertex3f(0.2f, 1.0f, -0.8f);
+	glVertex3f(0.4f, 1.0f, -0.8f);
+	glEnd();
+
+
+	////===> right bottom
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.2f, 1.0f, -0.1f);
+	glVertex3f(0.1f, 1.0f, -0.2f);
+	glVertex3f(0.2f, 1.0f, -0.2f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.2f, 1.0f, -0.2f);
+	glVertex3f(0.1f, 1.0f, -0.3f);
+	glVertex3f(0.2f, 1.0f, -0.4f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.3f, 1.0f, -0.1f);
+	glVertex3f(0.2f, 1.0f, -0.2f);
+	glVertex3f(0.4f, 1.0f, -0.2f);
+	glEnd();
+
+
+
+	///==>left top
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.8f, 1.0f, -0.1f);
+	glVertex3f(0.8f, 1.0f, -0.2f);
+	glVertex3f(0.9f, 1.0f, -0.2f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.8f, 1.0f, -0.2f);
+	glVertex3f(0.8f, 1.0f, -0.4f);
+	glVertex3f(0.9f, 1.0f, -0.3f);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.7f, 1.0f, -0.1f);
+	glVertex3f(0.6f, 1.0f, -0.2f);
+	glVertex3f(0.8f, 1.0f, -0.2f);
+	glEnd();
+
+
+	//inner rectangles
+
+	//left rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.6f, 1.0f, -0.7f);
+	glVertex3f(0.4f, 1.0f, -0.7f);
+	glVertex3f(0.4f, 1.0f, -0.6f);
+	glVertex3f(0.6f, 1.0f, -0.6f);
+	glEnd();
+
+	//bottom rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.4f, 1.0f, -0.6f);
+	glVertex3f(0.3f, 1.0f, -0.6f);
+	glVertex3f(0.3f, 1.0f, -0.4f);
+	glVertex3f(0.4f, 1.0f, -0.4f);
+	glEnd();
+
+	//right rectangle
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.6f, 1.0f, -0.4f);
+	glVertex3f(0.4f, 1.0f, -0.4f);
+	glVertex3f(0.4f, 1.0f, -0.3f);
+	glVertex3f(0.6f, 1.0f, -0.3f);
+	glEnd();
+
+	//top rectangle
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.7f, 1.0f, -0.6f);
+	glVertex3f(0.6f, 1.0f, -0.6f);
+	glVertex3f(0.6f, 1.0f, -0.4f);
+	glVertex3f(0.7f, 1.0f, -0.4f);
+	glEnd();
+
+
+	/// inner diamond
+
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 0.0f, 0.0f);
+	glVertex3f(0.5f, 1.0f, -0.6f);
+	glVertex3f(0.4f, 1.0f, -0.5f);
+	glVertex3f(0.5f, 1.0f, -0.4f);
+	glVertex3f(0.6f, 1.0f, -0.5f);
+	glEnd();
+
+
+
+
+
+
+
+}
 
 
 void drawBox()
@@ -31,48 +230,66 @@ void drawBox()
 
 
 	glTranslatef(tra_x, tra_y, tra_z);
-	glBegin(GL_QUADS);                // Begin drawing the color cube with 6 quads
-		// Top face (y = 1.0f)
-		// Define vertices in counter-clockwise (CCW) order with normal pointing out
-	// Green 
+	glBegin(GL_QUADS);
+	// Draw BG 
+ 	glColor3f(1.0f, 1.0f, 1.0f);     // White
+	glVertex3f(1.0f, 1.0f - 0.001, -1.0f);
+	glVertex3f(-1.0f, 1.0f - 0.001, -1.0f);
+	glVertex3f(-1.0f, 1.0f - 0.001, 1.0f);
+	glVertex3f(1.0f, 1.0f - 0.001, 1.0f);
 
+	
 
 
 	// Bottom face (y = -1.0f)
-	glColor3f(1.0f, 0.5f, 0.0f);     // Orange
-	glVertex3f(1.0f, -1.0f, 1.0f);
-	glVertex3f(-1.0f, -1.0f, 1.0f);
-	glVertex3f(-1.0f, -1.0f, -1.0f);
-	glVertex3f(1.0f, -1.0f, -1.0f);
+	glColor3f(0.8f, 0.8f, 0.8f);  // Orange
+	glVertex3f(1.0f, 0.95f, 1.0f);
+	glVertex3f(-1.0f, 0.95f, 1.0f);
+	glVertex3f(-1.0f, 0.95f, -1.0f);
+	glVertex3f(1.0f, 0.95f, -1.0f);
+
+
 
 	// Front face  (z = 1.0f)
-	glColor3f(1.0f, 0.0f, 0.0f);     // Red
+	 
 	glVertex3f(1.0f, 1.0f, 1.0f);
 	glVertex3f(-1.0f, 1.0f, 1.0f);
-	glVertex3f(-1.0f, -1.0f, 1.0f);
-	glVertex3f(1.0f, -1.0f, 1.0f);
+	glVertex3f(-1.0f, 0.95f, 1.0f);
+	glVertex3f(1.0f, 0.95f, 1.0f);
 
-	// Back face (z = -1.0f)
-	glColor3f(1.0f, 1.0f, 0.0f);     // Yellow
-	glVertex3f(1.0f, -1.0f, -1.0f);
-	glVertex3f(-1.0f, -1.0f, -1.0f);
+		// Back face (z = -1.0f)
+	 
+	glVertex3f(1.0f, 0.95f, -1.0f);
+	glVertex3f(-1.0f, 0.95f, -1.0f);
 	glVertex3f(-1.0f, 1.0f, -1.0f);
 	glVertex3f(1.0f, 1.0f, -1.0f);
+
 
 	// Left face (x = -1.0f)
-	glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+	 
 	glVertex3f(-1.0f, 1.0f, 1.0f);
 	glVertex3f(-1.0f, 1.0f, -1.0f);
-	glVertex3f(-1.0f, -1.0f, -1.0f);
-	glVertex3f(-1.0f, -1.0f, 1.0f);
+	glVertex3f(-1.0f, 0.95f, -1.0f);
+	glVertex3f(-1.0f, 0.95f, 1.0f);
 
 	// Right face (x = 1.0f)
-	glColor3f(1.0f, 0.0f, 1.0f);     // Magenta
+	 
 	glVertex3f(1.0f, 1.0f, -1.0f);
 	glVertex3f(1.0f, 1.0f, 1.0f);
-	glVertex3f(1.0f, -1.0f, 1.0f);
-	glVertex3f(1.0f, -1.0f, -1.0f);
-	glEnd();  // End of drawing color-cube
+	glVertex3f(1.0f, 0.95f, 1.0f);
+	glVertex3f(1.0f, 0.95f, -1.0f);
+		glEnd();
+	tile_1();
+
+	glTranslatef(0.0f, 0.0f, 1.0f);
+	tile_1();
+
+	glTranslatef(-1.0f, 0.0f, 0.0f);
+	tile_1();
+
+	glTranslatef(0.0f, 0.0f, -1.0f);
+	tile_1();
+	glFlush();
 
 
 

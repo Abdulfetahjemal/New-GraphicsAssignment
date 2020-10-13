@@ -1,2 +1,6 @@
 ﻿  Source.cpp
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(236,38): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(237,39): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(238,38): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(239,37): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
   GraphicsAssignment.vcxproj -> C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Debug\GraphicsAssignment.exe
