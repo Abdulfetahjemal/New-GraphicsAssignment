@@ -1,3 +1,0 @@
-﻿  Source.cpp
-  C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp: fatal error C1041: cannot open program database 'C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Debug\vc142.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
-D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(429,5): error MSB6006: "CL.exe" exited with code 2.

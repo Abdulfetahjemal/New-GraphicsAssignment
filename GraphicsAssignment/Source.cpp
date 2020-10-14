@@ -301,11 +301,11 @@ void tile_1() {
 
 }
 void tile_3() {
- 
+
 	glColor3f(0, 0, 0);
 	// Top line
 	glBegin(GL_POLYGON);
-	 
+
 	glVertex3f(-0.3f, 1.0f, 0.6f);
 	glVertex3f(-0.45f, 1.0f, 0.6f);
 
@@ -315,7 +315,7 @@ void tile_3() {
 	glEnd();
 	// Top right triangle
 	glBegin(GL_TRIANGLES);
- 
+
 
 	glVertex3f(-0.4f, 1.0f, 0.5f);
 	glVertex3f(-0.3f, 1.0f, 0.4f);
@@ -337,7 +337,7 @@ void tile_3() {
 
 	// bottom right triangle
 	glBegin(GL_TRIANGLES);
- 
+
 
 	glVertex3f(-0.3f, 1.0f, 0.4f);
 	glVertex3f(-0.3f, 1.0f, 0.3f);
@@ -345,7 +345,7 @@ void tile_3() {
 	glEnd();
 
 
-	 
+
 }
 
 void drawBG(float bgWidth)
@@ -459,7 +459,7 @@ void draw2thquadrant() {
 }
 
 void drawTile_3_main() {
- 
+
 	drawBG(0.6);
 	draw2thquadrant();
 	glTranslatef(0.6f, 0.0f, 0.0f);
@@ -613,20 +613,6 @@ void resize(int w, int h)
 
 
 
-void mySpecialFunction(int key, int x, int y)
-{
-	cout << "U -----------> rotate clockwise\n";
-	cout << "W or w ------> Up\n";
-	cout << "S or s -----> Down\n";
-	cout << "D or d ------> Right\n";
-	cout << "A or a ------> Left\n";
-	cout << "Z or z ------> Shrink\n";
-	cout << "X or x ------> Grow\n";
-	cout << "Z or z ------> Shrink\n";
-	cout << "Escape Key ---> exit the program\n\n";
-
-}
-
 void keyboard(unsigned char key, int x, int y)
 {
 	switch (key)
@@ -669,10 +655,8 @@ void keyboard(unsigned char key, int x, int y)
 		ydiff += 1.0f;
 		break;
 
-	case 'h':
-	case 'H':
-		mySpecialFunction(key, x, y);
-		break;
+	
+	
 	case 'Z':
 	case 'z':
 		grow_shrink--;
@@ -752,9 +736,6 @@ void createGLUTMenus() {
 
 	int menu;
 
-	// create the menu and
-	// tell glut that "processMenuEvents" will
-	// handle the events
 	menu = glutCreateMenu(processMenuEvents);
 
 	//add entries to our menu
