@@ -1,0 +1,18 @@
+﻿  Source.cpp
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(360,44): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(361,45): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(362,44): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(363,43): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(412,12): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(463,12): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(559,18): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(559,15): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(559,12): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(560,19): warning C4244:  'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Source.cpp(560,16): warning C4244:  'argument': conversion from 'float' to 'GLint', possible loss of data
+  Generating code
+  0 of 37 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GraphicsAssignment.vcxproj -> C:\Users\Me\Desktop\Assignment\New-GraphicsAssignment\GraphicsAssignment\Release\GraphicsAssignment.exe
